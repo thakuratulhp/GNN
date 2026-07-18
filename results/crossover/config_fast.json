@@ -1,0 +1,23 @@
+{
+  "n_grid": [
+    25,
+    50,
+    100,
+    150,
+    200
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_fraction": 0.2,
+  "n_pool": 227,
+  "n_test": 54,
+  "grouping": "reduced composition",
+  "target": "log10 sigma (S/cm)",
+  "metric": "test MAE",
+  "device": "cpu"
+}

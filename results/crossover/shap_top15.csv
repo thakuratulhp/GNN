@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+MagpieData mean CovalentRadius,0.41371474638013295
+MagpieData minimum SpaceGroupNumber,0.2607674215320906
+MagpieData avg_dev Electronegativity,0.23616804545892614
+MagpieData range SpaceGroupNumber,0.17624068412759528
+MagpieData avg_dev MendeleevNumber,0.15416426784595724
+MagpieData mean Row,0.14879881835594302
+MagpieData avg_dev Row,0.14535264113495525
+MagpieData avg_dev NUnfilled,0.08174261649326538
+MagpieData maximum GSvolume_pa,0.06629544159183397
+MagpieData avg_dev MeltingT,0.06379952517172274
+MagpieData mean NUnfilled,0.059629207454234036
+MagpieData avg_dev GSvolume_pa,0.059075137844765854
+MagpieData avg_dev CovalentRadius,0.05735394792100466
+MagpieData maximum MeltingT,0.05590169430828543
+MagpieData mean NpUnfilled,0.05381598321794228

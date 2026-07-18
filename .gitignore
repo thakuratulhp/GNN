@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+
+# Data & logs (large, generated).
+#
+# Anchored with a leading slash on purpose. An unanchored "data/" matches a
+# directory of that name at ANY depth, which silently kept src/gnnsse/data/ out
+# of the repository and left scripts importing a module that was not there.
+/data/
+/logs/
+
+# Ship the small result tables the paper reports (~60KB), so a reader can check
+# every number without rerunning ~19 CPU-hours of fitting.
+/results/*
+!/results/crossover/
+!/results/screen/
+/results/crossover/*
+/results/screen/*
+!/results/crossover/*.csv
+!/results/crossover/*.json
+!/results/screen/*.csv
+!/results/screen/*.json
+
+# Environment
+*.env
+.envrc
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow / W&B
+mlruns/
+wandb/
+
+# Optuna
+*.db
+
+# Coverage
+.coverage
+htmlcov/

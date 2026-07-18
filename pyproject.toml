@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnnsse"
+version = "0.1.0"
+description = "GNN-based screening pipeline for solid-state electrolyte discovery"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+# Only what the code actually imports.
+dependencies = [
+    "obelix-data>=1.2",
+    "mp-api>=0.41",
+    "pymatgen>=2024.5",
+    "matminer>=0.9",
+    "torch>=2.2",
+    "torch-geometric>=2.5",
+    "shap>=0.45",
+    "scikit-learn>=1.4",
+    "xgboost>=2.0",
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true

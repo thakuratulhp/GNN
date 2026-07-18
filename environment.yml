@@ -1,0 +1,24 @@
+name: gnn-sse
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pytorch::pytorch>=2.2
+  - conda-forge::pymatgen>=2024.5
+  - conda-forge::matminer>=0.9
+  - conda-forge::scikit-learn>=1.4
+  - conda-forge::xgboost>=2.0
+  - conda-forge::pandas>=2.1
+  - conda-forge::numpy>=1.26
+  - conda-forge::matplotlib>=3.8
+  - conda-forge::tqdm>=4.66
+  - pip:
+    - obelix-data>=1.2
+    - mp-api>=0.41
+    - torch-geometric>=2.5
+    - shap>=0.45
+    - pytest>=8
+    - ruff>=0.4
+    - -e .
